@@ -5,10 +5,12 @@ import React, { Component } from 'react';
 import slugify from 'slugify';
 
 import { USCurrencyFormat } from './utils';
-import Summary from './components/Summary';
-import Form from './components/Form';
 
 import './App.css';
+
+import Summary from './components/Summary';
+import Form from './components/Form';
+import Header from './components/Header';
 
 class App extends Component {
   state = {
@@ -94,9 +96,7 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <header>
-          <h1>ELF Computing | Laptops</h1>
-        </header>
+        <Header />>
         <main>
           <Form features={features} />
           <Summary summary={summary} total={total} />
