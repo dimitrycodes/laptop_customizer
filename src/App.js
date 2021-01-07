@@ -66,7 +66,7 @@ class App extends Component {
             selected={this.state.selected}
             onChange={this.updateFeature}
           />
-          <Summary summary={summary} total={total} />
+          <Summary summary={summary} selected={this.state.selected} />
         </main>
       </div>
     );
