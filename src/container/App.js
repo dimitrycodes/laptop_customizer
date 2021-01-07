@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-import { USCurrencyFormat } from './utils';
-import Summary from './components/Summary';
-import Form from './components/Form';
+import Summary from '../components/Summary';
+import Form from '../components/Form';
 
 import './App.css';
-import Header from './components/Header';
+import Header from '../components/Header';
 
 class App extends Component {
   state = {
