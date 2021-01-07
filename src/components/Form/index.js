@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Form = (props) => {
-  const { features } = props;
+import Options from '../Options';
+import FEATURES from '../../mock-data'
 
-  return (
-    <form className='main__form'>
-      <h2>Customize your laptop</h2>
-      {features}
-    </form>
-  );
-};
+class Form extends Component {
+  render() {
+    const {  selected, onChange } = this.props;
+    return (
+      <form className='main__form'>
+        <h2>Customize your laptop</h2>
+        <Options features={FEATURES} onChange={onChange} selected={selected} />
+      </form>
+    );
+  }
+}
 
 export default Form;
